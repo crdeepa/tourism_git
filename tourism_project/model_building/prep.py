@@ -18,6 +18,7 @@ print("Dataset loaded successfully.")
 
 # Drop the unique identifier
 df.drop('CustomerID',axis=1,inplace=True)
+df.drop(columns=['Unnamed: 0'], axis=1, inplace=True)
 
 df['Gender']=df['Gender'].replace({'Fe Male':'Female'})
 
