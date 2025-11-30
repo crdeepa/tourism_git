@@ -17,7 +17,7 @@ df = pd.read_csv(DATASET_PATH)
 print("Dataset loaded successfully.")
 
 # Drop the unique identifier
-df.drop(columns=['CustomerId'], axis=1, inplace=True)
+df.drop('CustomerID',axis=1,inplace=True)
 
 df['Gender']=df['Gender'].replace({'Fe Male':'Female'})
 
